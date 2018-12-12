@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fr" ng-app>
+<head>
+  <meta charset="utf-8" />
+  <title>exercice 1 partie Bonus angularjs</title>
+  <link rel="stylesheet" href="style3.css">
+  <script src="Agularjs-1.7.5.js"></script>
+</head>
+<body >
+  <form name="myForm">
+      <label>E-mail : </label>
+      <input name="mail" type="email" ng-model="Input" />
+  </form>
+  <div class="valid" ng-show="myForm.mail.$valid">Adresse valide</div>
+  <div class="invalid" ng-show="myForm.mail.$error.email">Adresse invalide</div>
+</body>
+</html>
